@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wilson Abah | Designer, Frontend Developer &amp; Researcher
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link href="../img/favicon-32.png" rel="shortcut icon" type="image/png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+
+    <script src="https://kit.fontawesome.com/9bdc906322.js"></script>
+    <script async="" src="https://cdn.splitbee.io/sb.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+  <style>
+    /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+  	#purple{
+  		    background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#rest{
+margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  margin-left: 8px;
+}
+#exit{
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  margin-left: 8px;
+}
+#logo{
+	margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 100px;
+}
+.reset{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 1000px;
+}
+.close{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  margin-left: 100px;
+}
+
+.label{
+  font-family: Verdana;
+}
+#yo{
+  outline-color:#D3D3D3;
+}
+.topnav{
+  background-color: transparent;
+}
+.form{
+  background-color: transparent;
+  overflow: hidden;
+}
+#submit{
+  padding-bottom: 25px;
+}
+</style>
+</head>
+<body class="w3-mobile">
+	 <nav class="topnav">
+      <div class="w3-container w3-bar">
+        <div class="navbar-brand"><a class="navbar-item" href="/"><img id="logo" class="w3-center w3-bar-item" src="https://live.staticflickr.com/65535/52609207587_bfe2d40e38_n.jpg" alt="Wilson Abah | Designer, Front-end Developer &amp; Researcher" height="70" width="30%" ></a></div>
+        <div class="navbar-menu w3-bar-item" id="navMenu">
+          <div class="navbar-end w3-bar-item">
+            <div class="navbar-item w3-bar-item w3-right-align">
+              <a class="" data-tooltip="Reset" onclick="document.getElementById('form').reset();"> <button id="purple" class="w3-display-topright w3-xlarge w3-padding"><span class="icon is-small"> <img src="https://img.icons8.com/fluency/512/recurring-appointment.png" style="width:3%" class="reset"> </span></a> <a class="is-medium tooltip is-tooltip-bottom" data-tooltip="Close" href="/index.html"><span class="icon is-small"> <img  src="https://img.icons8.com/ultraviolet/512/delete-sign.png" style="width:3%" class="close"> </span></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+<div class="is-form-page">
+      <section class="w3-white w3-center">
+        <div class="w3-container">
+          <div class="w3-center">
+            <div class="column is-8"><img class="w3-avatar w3-small" src="https://mattfarley.ca/img/mf-avatar.svg">
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">Thanks for taking the time to reach out.<br> How can I help you today?</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section class="form">
+        <div class="w3-row w3-section">
+          <form id="hello" accept-charset="UTF-8" action="send" method="POST" enctype = "multipart/form-data" class="w3-container w3-card-4 w3-white w3-text-black w3-margin">
+            <div class="w3-row-padding w3-center">
+              <div class="w3-rest w3-half">
+                
+                  <label class="label w3-large w3-text-grey"><b>Name</b></label>
+                <br><br>
+                    <input id="yo" class="w3-input w3-border w3-large w3-border-light-grey" name="name" type="text" required>
+                  </div>
+              
+                <div class="w3-rest w3-half">
+                  <label class="label w3-large w3-text-grey"><b>Email</b></label>
+                  <br><br>
+                    <input id="yo" class="w3-input w3-border w3-border-light-grey w3-large" name="email" type="email" required>
+            </div>
+          </div>
+<br><br>
+          
+            <div class="w3-center">
+              <div class="column">
+                
+                  <label class="label w3-large w3-text-grey"><b>Message</b></label>
+                  <br><br>
+                  <div class="control is-expanded">
+                    <textarea id="yo" class="w3-large w3-center w3-border w3-border-light-grey" name="message" rows="5" required style="width:50%"></textarea>
+                  </div>
+                </div>
+                <div class="field is-hidden">
+                  <label class="is-hidden"></label>
+                  <div class="control is-expanded is-hidden">
+                    <input class="is-hidden w3-input w3-border w3-border-white" name="bot_vortex" type="hidden" >
+                  </div>
+                </div>
+              </div>
+            <br><br><br>
+            <div class="w3-center">
+              <div class="column is-one-third">
+                <div class="field">
+                  <div id="submit" class="control">
+                    <button class="w3-btn w3-large w3-white w3-border w3-border-deep-purple w3-round-xxlarge 
+                    w3-rounder w3-hover-deep-purple w3-text-deep-purple">Submit</button>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+      </section>
+    <script src="./index.js"></script>
+
+</body>
+</html>
