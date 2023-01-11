@@ -27,9 +27,16 @@
       href="assets/icons/apple-touch-icon.png"
     />
     <link href="../img/favicon-32.png" rel="shortcut icon" type="image/png">
+
+  <link rel="icon" type="image/png" href="https://live.staticflickr.com/65535/52620007466_d110b0f529_w.jpg"/>
+
+
+
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-ios.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -49,7 +56,15 @@
     <script src="https://kit.fontawesome.com/9bdc906322.js"></script>
     <script async="" src="https://cdn.splitbee.io/sb.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+   <script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
     <style>
       body,h1,h2,h3,h4,h5,h6 {font-family:Trebuchet MS, Tahoma, serif; 
@@ -147,12 +162,31 @@ border-color: rgb(51, 78, 168);
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
+.navbar-brand{
+
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 700px;
+  margin-left: 8px;
+}
 </style>
   </head>
   <body class="w3-mobile">
     <nav class="catch w3-mobile" role="navigation" aria-label="main navigation">
       <div class="container catch w3-white">
-        <div class="navbar-brand catch w3-white"><a class="navbar-item" href="/"><img src="https://live.staticflickr.com/65535/52609207587_bfe2d40e38_n.jpg" style="width:10%"></a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-xlarge w3-right-align w3-hover w3-hover-white"> &times;</button>
+  <a href="/startup.html" class="w3-bar-item w3-button w3-hover-white">Collaboration</a>
+  <a href="#white" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+  <a href="/hello.html" class="w3-bar-item w3-hover-white w3-button">Contact</a>
+</div>
+
+<div>
+  <button class="w3-button  w3-xxlarge w3-hover-text-blue w3-text-blue" onclick="w3_open()">☰</button>
+   <div class="navbar-brand  w3-white"><a class="navbar-item" href="/"><img src="https://live.staticflickr.com/65535/52620020701_c74603910d_n.jpg" style="width:50%; top:100%;"  class="sign"></a><a class="navbar-brand" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></span></a> </div>
+</div>
+
+       
         <div class="catch w3-white" id="navMenu">
   
             <div class="catch" ><a href="/hello.html" class="button is-primary is-outlined is-rounded has-text-weight-normal"><button  id="formButton" href="/hello.html" class="w3-btn w3-round-xlarge w3-blue w3-circle w3-border-purple w3-display-topright w3-margin w3-mobile" >Say Hello</button> </a></div>
@@ -164,6 +198,8 @@ border-color: rgb(51, 78, 168);
       <div class="hero-body catch w3-white">
         <div class="container w3-white">
           <div class="columns is-centered w3-center w3-white">
+            <p class="w3-jumbo w3-text-yellow div" style="text-shadow:1px 1px 0 #444"><i>WILSON ABAH</i></p>
+            
             <div class="column w3-center catch w3-white">
               <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile w3-center catch" style="text-shadow:1px 1px 0 #444"><b>Designer, Frontend Developer &amp; Researcher</b></h1>
               <h2 class="subtitle is-size-4-tablet">I design and code beautifully simple things, and I love what I do.</h2><img class="avatar w3-animate-right catch w3-white" src="https://mattfarley.ca/img/mf-avatar.svg">
@@ -177,13 +213,12 @@ border-color: rgb(51, 78, 168);
       <div id="div" class="container w3-ios-dark-blue">
         <div  class="card4">
           <div  class= "square w3-ios-dark-blue">
-<span>
+
   <br><br><br>
             <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile w3-center w3-ios-dark-blue">Hi, I’m Wil. Nice to meet you.</h1></span>
             <br><br><br>
             <h2 class="subtitle is-size-5-desktop has-text-weight-normal w3-center w3-large"><b>Since beginning my journey as a freelance designer about two years ago,<br> I've consulted for startups,<br> and collaborated with talented people to create digital products for both business and consumer use.<br> I'm quietly confident,<br> naturally curious,<br> and perpetually working on improving my chops one design problem at a time.</b></h2>
-            <br><br><br><br><br><br>
-            <p class="w3-jumbo w3-text-grey div" style="text-shadow:1px 1px 0 #444"><i>WILSON ABAH</i></p>
+            
           </div>
         </div>
             
@@ -191,19 +226,22 @@ border-color: rgb(51, 78, 168);
       </div>
 
     </section>
+     <img src="https://live.staticflickr.com/65535/52619596327_4e6461e893_z.jpg" style="width:100%" height="auto">
+            
 
-    <section id="nice" class="section skills has-text-centered w3-center w3-row  w3-mobile">
+
+    <section id="nice" class="section skills has-text-centered w3-center w3-row  w3-mobile w3-blue">
       <div class="container is-narrow">
         <div class="box">
           <div class="content">
             <div class="columns is-centered">
-              <div class="column w3-container w3-mobile w3-col s4 w3-teal"><span> <img src="https://img.icons8.com/fluency/512/affinity-designer.png" style="width:15%"> </i></span>
+              <div class="column w3-container w3-mobile w3-col s4 w3-yellow"><span> <img src="https://img.icons8.com/fluency/512/affinity-designer.png" style="width:15%"> </i></span>
                 <br>
                 <h1 class="title is-size-4 is-spaced"><b>Designer</b></h1>
                 <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Things I enjoy designing:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Things I enjoy designing:</b></p>
                 <p>UX, UI, Web, Apps, Logos</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Design Tools:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Design Tools:</b></p>
                 <ul>
                    <li>Affinity Designer</li>
                   <li>Figma</li>
@@ -214,14 +252,14 @@ border-color: rgb(51, 78, 168);
                   <li>Canva</li>
                 </ul>
               </div>
-               <div class="column w3-container w3-col s4 w3-mobile w3-teal"><span> <img src="https://img.icons8.com/fluency/512/source-code.png" style="width:15%">
+               <div class="column w3-container w3-col s4 w3-mobile w3-yellow"><span> <img src="https://img.icons8.com/fluency/512/source-code.png" style="width:15%">
 </span>
 <br>
                 <h1 class="title is-size-4 is-spaced"><b>Frontend Developer</b></h1>
                 <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Languages I speak:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Languages I speak:</b></p>
                 <p>HTML, Pug, Slim, CSS, Sass, Git</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Dev Tools:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Dev Tools:</b></p>
                 <ul>
                   <li>Atom</li>
                   <li>Bitbucket</li>
@@ -235,13 +273,13 @@ border-color: rgb(51, 78, 168);
                   <li>VSCode</li>
                 </ul>
               </div>
-              <div class="column w3-container w3-mobile w3-col s4 w3-teal"><span class="fa-stack fa-2x"><img src="https://img.icons8.com/fluency/512/graduation-cap.png" style="width:100%">
+              <div class="column w3-container w3-mobile w3-col s4 w3-yellow"><span class="fa-stack fa-2x"><img src="https://img.icons8.com/fluency/512/graduation-cap.png" style="width:100%">
 <br></span>
                 <h1 class="title is-size-4 is-spaced"><b>Researcher</b></h1>
                 <p>I genuinely care about my craft and love going deeper and further in my fields.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Experiences I draw from:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Experiences I draw from:</b></p>
                 <p>UX/UI, Product design, Freelancing</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-purple"><b>Researcher Stats:</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Researcher Stats:</b></p>
                 <ul>
                   <li>2 years experience</li>
                   <li>15 short courses</li>
@@ -257,7 +295,7 @@ border-color: rgb(51, 78, 168);
         </div>
       </div>
     </section>
-  </span>
+  
     <section id="white" class="w3-mobile w3-small ">
       <div class="container is-narrow w3-white w3-small">
         <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile w3-center w3-bold w3-xlarge" style="text-shadow:1px 1px 0 #444">My Demos</h1><br>
@@ -266,7 +304,7 @@ border-color: rgb(51, 78, 168);
 ><b class="w3-text-blue bg w3-large">Email me</b></a></h2>
         <br>
          <div>
-          <h2 class="w3-center w3-bold w3-large">Click on The Images To See The Code:</h2>
+          <h2 class="w3-center w3-bold w3-large">Click on Visit CodePen when hovering over images to see code and animation display:</h2>
         </div>
         <br>
         <br>
@@ -455,7 +493,7 @@ border-color: rgb(51, 78, 168);
               <h1   style="text-shadow:1px 1px 0 #444">Interested in collaborating with me?</h1>
 
 
-                <h2 class="subtitle is-size-5-desktop w3-text-deep-purple" style="text-shadow:1px 1px 0 #444">I’m always open to discussing product design work or partnership opportunities.</h2><br><br><br><a class="" href="/startup.html"><button class="w3-btn w3-round-xxlarge w3-xlarge w3-white w3-border w3-border-purple w3-round-large w3-hover-deep-purple w3-text-deep-purple"><span class="icon"><i class="material-icons">message</i></span> <span>Start a conversation</span></button></a>
+                <h2 class="subtitle is-size-5-desktop w3-text-blue" style="text-shadow:1px 1px 0 #444">I’m always open to discussing product design work or partnership opportunities.</h2><br><br><br><a class="" href="/startup.html"><button class="w3-btn w3-round-xxlarge w3-xlarge w3-white w3-border w3-border-blue w3-round-large w3-hover-blue w3-text-blue"><span class="icon"><i class="material-icons">message</i></span> <span>Start a conversation</span></button></a>
               </div>
             </div>
           </div>
@@ -475,7 +513,7 @@ border-color: rgb(51, 78, 168);
         <br><br><br>
         <div class="copyright w3-center w3-large">Handcrafted by me <span class="icon has-white-text w3-center"> <img src="https://img.icons8.com/fluency/2x/creative-commons-all-rights-reserved.png" class="social"> </span>  2022</div>
       </div>
-      <br>
+      
     </footer>
     <script src="./index.js"></script>
 
