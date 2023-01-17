@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-  <head class="w3-mobile">
+  <head class="w3-mobile l1 - l12 m1 - m12 s1 - s12">
     <title>Wilson Abah | Designer, Frontend Developer &amp; Researcher
     </title>
     <meta charset="utf-8">
@@ -41,6 +41,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 
     <script
       type="module"
@@ -83,25 +86,6 @@ function w3_close() {
   width: 50%;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 24px;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  right: 0;
-  background-color: #2F4F4F;
-  overflow: hidden;
-  width: 200%;
-  height:0;
-  transition: .5s ease;
-  border-radius: 24px;
-}
 
 .w3-container:hover .overlay {
   bottom: 0;
@@ -140,117 +124,194 @@ function w3_close() {
 .socicon{
   width:5%;
 }
-#white{
-  background-color: white;
+
+.intro{
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(
+to bottom,
+#a275f5 0%,
+#a275f5 80%,
+#e8cee3 80%,
+#e8cee3 100%
+
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#nice{
-  background-color: teal;
-  border-style: solid;
-border-color: rgb(51, 78, 168);
+
+
+.sky{
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(
+to right,
+#e8cee3 0%,
+#e8cee3 50%,
+#e8cee3 50%,
+#e8cee3 100%
+ );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-.navbar-brand{
-top:100px;
+.fa-circle{
+  margin-top: 0px;
+  margin-right: 300px;
+  margin-left: 0px;
+  margin-bottom: 50px;
+}
+.logos{
   margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 1000px;
-  margin-left: 8px;
+  margin-right: 60px;
+  margin-left: 10px;
+  margin-bottom: 50px;
 }
-.rest{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 1000px;
-  margin-left: 8px;
+
+.about{
+  border-left: 10px;
+  border-right: 10px;
+}
+
+.about1{
+  margin-left: 10px;
+  margin-right: 30px;
+}
+.img {
+  border-radius: 8px;
+  border-top: 100px;
+}
+.wer{
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+.box{
+  margin-bottom: 100px;
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #2F4F4F;
+  overflow: hidden;
+  height:0;
+  transition: .5s ease;
+  border-radius: 24px;
+}
+.l3-container {
+  position: relative;
+  width: 50%;
+}
+
+.l3-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  border-radius: 24px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  margin-left: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  min-width: 20%;
+  max-width: 300%;
+}
+
+
+.project-thumb{
+  border-radius: 24px;
+   
+}
+.tur{
+  background-color: #a275f5;
+}
+.social-icons {
+   display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
 }
 </style>
   </head>
-  <body class="w3-mobile">
-    <nav class="catch w3-mobile" role="navigation" aria-label="main navigation">
-      <div class="container catch w3-white w3-mobile">
-        <div class="w3-sidebar w3-bar-block w3-border-right w3-mobile rest" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-xlarge w3-right-align w3-hover w3-hover-white rest"> &times;</button>
-  <a href="/startup.html" class="w3-bar-item w3-button w3-hover-white">Collaboration</a>
-  <a href="#white" class="w3-bar-item w3-button w3-hover-white">Projects</a>
-  <a href="/hello.html" class="w3-bar-item w3-hover-white w3-button">Contact</a>
+  <body>
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="container">
+ <div class="navbar-brand"><a class="navbar-item" href="/"><img class="image is-128x128" src="https://live.staticflickr.com/65535/52624391538_55d45feb98_z.jpg">  </a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+
+        <div class="navbar-menu is-shadowless" id="navMenu">
+          <div class="navbar-start" ></div>
+
+          <div class="navbar-end"><a class="navbar-item has-text-weight-normal  w3-hover-text-blue" href="/mentorship">Mentorship</a>
+             <div class="navbar-item"><a class="button is-primary is-outlined is-rounded has-text-weight-normal w3-border-blue w3-blue" href="/contact.html">Say Hello </a>
 </div>
-
-<div class="w3-row-padding">
-  <button class="w3-button  w3-xxlarge w3-hover-text-blue w3-text-blue rest  w3-display-topleft" onclick="w3_open()">☰</button>
-   <div class="navbar-brand  w3-white"><a class="navbar-item" href="/"><img src="https://live.staticflickr.com/65535/52620090307_40990e7afb_w.jpg" style="width:20%; height: 40%;"  class="sign  w3-display-topmiddle"></a><a class="navbar-brand" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></span></a> </div>
-</div>
-
-        <div class="catch w3-white" id="navMenu">
-  
-            <div class="catch" ><a href="/hello.html" class="button is-primary is-outlined is-rounded has-text-weight-normal"><button  id="formButton" href="/hello.html" class="w3-btn w3-round-xlarge w3-blue w3-circle w3-border-purple w3-display-topright w3-margin w3-mobile" >Say Hello</button> </a></div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <br><br><br>
-    <section class="w3-mobile w3section topnav catch w3-white">
-      <div class="hero-body catch w3-white">
-        <div class="container w3-white">
-          <div class="columns is-centered w3-center w3-white">
-                        <p class="w3-jumbo w3-text-yellow div" style="text-shadow:1px 1px 0 #444"><i></i></p>
-                        <br><br>
-
-            
-            <div class="column w3-center catch w3-white">
-              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile w3-center catch" style="text-shadow:1px 1px 0 #444"><b>Designer, Frontend Developer &amp; Researcher</b></h1>
-              <h2 class="subtitle is-size-4-tablet">I design and code beautifully simple things, and I love what I do.</h2><img class="avatar w3-animate-right catch w3-white" src="https://mattfarley.ca/img/mf-avatar.svg">
             </div>
+</div>
+</div>
+</nav>
+<section class="hero is-white has-text-centered">
+<div class="hero-body">
+<div class="container">
+  <div class="columns is-centered">
+            <div class="column">
+            <p class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"><i class="w3-text-blue">WILSON ABAH</i> </p>
+              <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"> Designer, Frontend Developer &amp; Researcher</h1>
+              <h2 class="subtitle is-size-4-tablet">I design and code beautifully simple things, and I love what I do.</h2><img class="avatar w3-spin" src="https://mattfarley.ca/img/mf-avatar.svg">
           </div>
         </div>
-      </div>
-      <div class="hero-foot w3-ios-dark-blue">
-       <span> <div class="container w3-white"><img class="w3-bottom  w3-center w3-container catch" src="https://mattfarley.ca/img/hero-devices.svg" style="width:100%"></div>
-      </div>
-      <div id="div" class="container w3-ios-dark-blue">
-        <div  class="card4">
-          <div  class= "square w3-ios-dark-blue">
-
-  <br><br><br>
-            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile w3-center w3-ios-dark-blue">Hi, I’m Wil. Nice to meet you.</h1></span>
-            <br><br><br>
-            <h2 class="subtitle is-size-5-desktop has-text-weight-normal w3-center w3-large"><b>Since beginning my journey as a freelance designer about two years ago,<br> I've consulted for startups,<br> and collaborated with talented people to create digital products for both business and consumer use.<br> I'm quietly confident,<br> naturally curious,<br> and perpetually working on improving my chops one design problem at a time.</b></h2>
-            
-          </div>
         </div>
-            
-
       </div>
-
+      
+       <div class="hero-foot">
+       <div class="container"><img class="is-bottom" src="https://mattfarley.ca/img/hero-devices.svg"></div>
+      </div>
     </section>
-     <img src="https://live.staticflickr.com/65535/52619596327_4e6461e893_z.jpg" style="width:100%" height="auto">
+    <section class="section is-medium is-primary has-text-centered is-long intro">
+      <div class="container">
+        <div  class="columns is-centered">
+          <div  class= "column is-three-fifths">
+
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Wil. Nice to meet you.</h1>
+          
+            <h2 class="subtitle is-size-5-desktop has-text-weight-normal">Since beginning my journey as a freelance designer about two years ago, I've consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</h2>
             
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-    <section id="nice" class="section skills has-text-centered w3-center w3-row  w3-mobile w3-blue">
+    <section class="section skills has-text-centered skills sky">
       <div class="container is-narrow">
-        <div class="box">
+        <div class="box ">
           <div class="content">
             <div class="columns is-centered">
-              <div class="column w3-container w3-mobile w3-col s4 w3-yellow"><span> <img src="https://img.icons8.com/fluency/512/affinity-designer.png" style="width:15%"> </i></span>
-                <br>
-                <h1 class="title is-size-4 is-spaced"><b>Designer</b></h1>
-                <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Things I enjoy designing:</b></p>
-                <p>UX, UI, Web, Apps, Logos</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Design Tools:</b></p>
-                <ul>
+              <div class="columns wer">              <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-layer-plus fa-stack-1x has-text-dark is-centered logos"></i></span>
+
+                <h1 class="title is-size-4 is-spaced about w3-text-blue">Designer</h1>
+                <p><b>I value simple content structure, clean design patterns, and thoughtful interactions.</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal about"><b class="w3-text-blue">Things I enjoy designing:</b></p>
+                <p><b>UX, UI, Web, Apps, Logos</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal about"><b class="w3-text-blue">Design Tools:</b></p>
+                <ul><b>
                    <li>Affinity Designer</li>
                   <li>Figma</li>
                   <li>Font Awesome</li>
@@ -258,17 +319,17 @@ top:100px;
                   <li>Sketch</li>
                   <li>Webflow</li>
                   <li>Canva</li>
+                </b>
                 </ul>
               </div>
-               <div class="column w3-container w3-col s4 w3-mobile w3-yellow"><span> <img src="https://img.icons8.com/fluency/512/source-code.png" style="width:15%">
-</span>
-<br>
-                <h1 class="title is-size-4 is-spaced"><b>Frontend Developer</b></h1>
-                <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Languages I speak:</b></p>
-                <p>HTML, Pug, Slim, CSS, Sass, Git</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Dev Tools:</b></p>
-                <ul>
+                         <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-square-terminal fa-stack-1x has-text-dark logos"></i></span>
+
+                <h1 class="title is-size-4 is-spaced w3-text-blue">Frontend Developer</h1>
+                <p><b>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><b class="w3-text-blue">Languages I speak:</b></p>
+                <p><b>HTML, Pug, Slim, CSS, Sass, Git</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal"><b class="w3-text-blue">Dev Tools:</b></p>
+                <ul><b>
                   <li>Atom</li>
                   <li>Bitbucket</li>
                   <li>Bootstrap</li>
@@ -278,24 +339,24 @@ top:100px;
                   <li>Surge</li>
                   <li>Terminal</li>
                   <li>Vercel</li>
-                  <li>VSCode</li>
+                  <li>VSCode</li></b>
                 </ul>
               </div>
-              <div class="column w3-container w3-mobile w3-col s4 w3-yellow"><span class="fa-stack fa-2x"><img src="https://img.icons8.com/fluency/512/graduation-cap.png" style="width:100%">
-<br></span>
-                <h1 class="title is-size-4 is-spaced"><b>Researcher</b></h1>
-                <p>I genuinely care about my craft and love going deeper and further in my fields.</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Experiences I draw from:</b></p>
-                <p>UX/UI, Product design, Freelancing</p>
-                <p class="list-title has-text-primary has-text-weight-normal w3-text-blue"><b>Researcher Stats:</b></p>
-                <ul>
+                            <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-book fa-stack-1x has-text-dark logos"></i></span>
+
+                <h1 class="title is-size-4 is-spaced about1 w3-text-blue">Researcher</h1>
+                <p><b>I genuinely care about my craft and love going deeper and further in my fields.</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal about1"><b class="w3-text-blue">Experiences I draw from:</b></p>
+                <p><b>UX/UI, Product design, Freelancing</b></p>
+                <p class="list-title has-text-primary has-text-weight-normal about1"><b class="w3-text-blue">Researcher Stats:</b></p>
+                <ul><b>
                   <li>2 years experience</li>
                   <li>15 short courses</li>
                   <li>7 bootcamps</li>
                   <li>60+ Projects</li>
                   <li>350+ Collab sessions</li>
                   <li>60+ group critiques</li>
-                  <li>6,500+ comments</li>
+                  <li>6,500+ comments</li></b>
                 </ul>
               </div>
             </div>
@@ -303,198 +364,226 @@ top:100px;
         </div>
       </div>
     </section>
+    <br><br>
+    <div class="hero-foot">
+    <div class="container">
+     <img src="https://live.staticflickr.com/65535/52619596327_4e6461e893_z.jpg" class=" is-bottom img w3-animate-fading">
+        </div>    
+</div>
   
-    <section id="white" class="w3-mobile w3-small ">
-      <div class="container is-narrow w3-white w3-small">
-        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile w3-center w3-bold w3-xlarge" style="text-shadow:1px 1px 0 #444">My Demos</h1><br>
-        <h2 class="subtitle is-size-5-desktop w3-mobile w3-center w3-large">The Question should never be <br>"what have you done"?<br> But "What can you do for us?" <br>
-        So...<br> I love trying out new things quite often,<br> here are a few designed interactive projects I've worked on.<br> Want to see more?<br> <a class="has-text-weight-normal" href="mailto:wilsonkvng16@gmail.com" style="text-decoration:none"
-><b class="w3-text-blue bg w3-large">Email me</b></a></h2>
-        <br>
+    <section  class="section projects is-medium is-white has-text-centered">
+      <div class="container is-narrow">
+        <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Demos</h1>
+        <h2 class="subtitle is-size-5-desktop">The Question should never be <br>"what have you done"?<br> But "What can you do for us?" <br>
+        So...<br> I love trying out new things quite often,<br> here are a few designed interactive projects I've worked on.<br> Want to see more?<br> <a class="has-text-weight-normal w3-text-blue" href="mailto:wilsonkvng16@gmail.com">Email me</a></h2>
          <div>
           <h2 class="w3-center w3-bold w3-large">Click on Visit CodePen when hovering over images to see code and animation display:</h2>
         </div>
         <br>
         <br>
-        <br>
+        </div>
 
     
-  <div class="w3-row-padding">
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601059851_19c8a905de_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">A flying plane animated with 3D CSS and automated with Javascript.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/JjZMMjP"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a></div>
-  </div>
-</div>
-    </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601322914_2c0a5f0118_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">A checkbox impossible to keep checked because there is a switch command on JS to return it back to its original form.<br>
-      <a href="https://codepen.io/Wheelsinn001/pen/GRGyOQp"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button>
-</a>
-  </div>
-  </div>
-    </div>
-  </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601580878_10db5929ef_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Using Scroll Trigger to create disc motion, and using JS to make available different sounds and effects.<br><br>
-<a href="https://codepen.io/Wheelsinn001/pen/KKeZyLo"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a>
-    </div>
-  </div>
-    </div>
-  </div>
-  </div>
-  <br><br>
-<br>
-<div class="w3-row-padding">
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601487405_8d0089a38a_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">A game of Tic Tac Toe I created using CSS and SVG.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/OJEzOaW"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a></div>
-  </div>
-</div>
-    </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601582018_62f9bd774d_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">An Experimental display of the Physics Theory of Sir Isaac Newton .<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/oNyGjgN"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button>
-</a>
-  </div>
-  </div>
-    </div>
-  </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601582268_cf097908f5_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">The Cards Stacked Against Developers.<br><br>
-<a href="https://codepen.io/Wheelsinn001/pen/LYreQEL"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a>
-    </div>
-  </div>
-    </div>
-  </div>
+  <div class="project-grid">
+    <div class="columns is-multiline">
+      <div class="column is-half-tablet is-one-third-desktop l3-container is-12-mobile">
+
+        <figure class="image is-3by2">
+
+      <img src="https://live.staticflickr.com/65535/52601059851_19c8a905de_w.jpg" class="project-thumb">
+   <div class="overlay">
+
+    <figcaption class=" text">
+
+                  <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A flying plane animated with 3D CSS and automated with Javascript.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/JjZMMjP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+
+  </figcaption>
   </div>
 
-
-  <br><br>
-<br>
-<div class="w3-row-padding">
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601064466_87cc8b4efb_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Animated Chrome Dinosaur.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/vYrpdOd"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a></div>
-  </div>
+ </figure>
 </div>
-    </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601582743_7fb430c215_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Animated Scalextric playground continuous rotation.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/VwdyQjQ"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button>
-</a>
-  </div>
-  </div>
-    </div>
-  </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601583283_1e9782b40f_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Toying with Electricity and bringing it to life, bringing hue saturation and all other electrical controls to tweak Tesla's Electricity.<br><br>
-<a href="https://codepen.io/Wheelsinn001/pen/MWXEaJP"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a>
-    </div>
-  </div>
-    </div>
-  </div>
-  </div>
+    <div class="column is-half-tablet is-one-third-desktop l3-container is-12-mobile">
+      <figure class="image is-3by2">
+      <img src="https://live.staticflickr.com/65535/52601322914_2c0a5f0118_w.jpg" class="image project-thumb">
+       <div class="overlay">
+      <figcaption class="text">
+    <h1 class="title is-size-5 is-size-4-widescreen w3-text-white">A checkbox impossible  to return back to its original form.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/GRGyOQp" class="button is-primary is-outlined is-rounded  w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+   </figcaption>
+               </div>
+              </figure>
+            </div>
+            <div class="is-12-mobile column is-half-tablet is-one-third-desktop ">
+      <figure class="image is-3by2 l3-container"><img src="https://live.staticflickr.com/65535/52601580878_10db5929ef_w.jpg" class="project-thumb">
+         <div class="overlay">
+        <figcaption class="text">
+    <h1 class="title is-size-5 is-size-4-widescreen w3-text-white">Using Scroll Trigger to create disc motion, and using JS to make available different sounds and effects.</h1>
+<a href="https://codepen.io/Wheelsinn001/pen/KKeZyLo" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+    </figcaption>
+               </div>
+              </figure>
+            </div>
+    <div class="column is-12-mobile is-half-tablet is-one-third-desktop">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601487405_8d0089a38a_w.jpg" class="project-thumb">
+       <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A game of Tic Tac Toe I created using CSS and SVG.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/OJEzOaW" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+ </div>
+              </figure>
+            </div>
 
-  <br><br>
-<br>
-<div class="w3-row-padding">
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601489695_930f617b20_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">With the OnEvent, I was able to make a dimmer switch that changes the background light when put on.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/oNypprw"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a></div>
-  </div>
-</div>
-    </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601328804_d039c0ca40_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Using Draggable and Scroll Trigger, I was able to create an endless cover flow of images .<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/xxzppZK"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button>
-</a>
-  </div>
-  </div>
-    </div>
-  </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601490405_5bf71a1776_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Using MorphSVG and XML, I was able to create a Snake that screams every 5 seconds.<br><br>
-<a href="https://codepen.io/Wheelsinn001/pen/qBKpxWr"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a>
-    </div>
-  </div>
-    </div>
-  </div>
-  </div>
+<div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601582018_62f9bd774d_w.jpg" class="project-thumb">
+       <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Experimental Physics displaying the Newton Bulb Theory.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/oNyGjgN" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+ </div>
+              </figure>
+            </div>
 
-  <br><br>
-<br>
-<div class="w3-row-padding">
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601329414_3d99351bf5_w.jpg" class="image" style="width:200%">
+            <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container w3-text-white">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601582268_cf097908f5_w.jpg" class="project-thumb">
       <div class="overlay">
-    <div class="text">A CSS stopwatch made purely with HTML and CSS only.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/abKEExZ"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a></div>
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Cards Stacked Against Devs.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/LYreQEL" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
   </div>
+              </figure>
+            </div>
+
+
+ <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601064466_87cc8b4efb_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Google Chrome Dino.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/vYrpdOd" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+             <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601582743_7fb430c215_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Scalextrix Race.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/VwdyQjQ" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white
+      "><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+
+ <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601583283_1e9782b40f_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Tesla Coils.</h1>
+      <a href="https://codepen.io/Wheelsinn001/details/MWXEaJP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+
+ <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601489695_930f617b20_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A Dimmer Switch To put on and off background light.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/oNypprw" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+             <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601328804_d039c0ca40_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> An Infinte Coverflow.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/xxzppZK" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+             <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601490405_5bf71a1776_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Snake Constantly screaming.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/qBKpxWr" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+
+
+             <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601329414_3d99351bf5_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A fully working StopWatch.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/abKEExZ" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+             <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601329494_a22c3a05e2_w.jpg" class="project-thumb">
+<div class="overlay">
+            <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Toaster.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/PoaEEEE" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
+
+
+ <div class="column is-12-mobile is-half-tablet is-one-third-desktop 3-container">
+      <figure class="image is-3by2 l3-container">
+      <img src="https://live.staticflickr.com/65535/52601585173_27a4202862_w.jpg" class="project-thumb">
+      <div class="overlay">
+      <figcaption class="text">
+<h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Vue Cash Register.</h1>
+      <a href="https://codepen.io/Wheelsinn001/pen/RwJxxqj" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+  </figcaption>
+  </div>
+              </figure>
+            </div>
 </div>
-    </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601329494_a22c3a05e2_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Making My Toast Bread With Javascript Toaster.<br><br><br>
-      <a href="https://codepen.io/Wheelsinn001/pen/PoaEEEE"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button>
-</a>
-  </div>
-  </div>
-    </div>
-  </div>
-    <div class="w3-col s4">
-      <div class="w3-container">
-      <img src="https://live.staticflickr.com/65535/52601585173_27a4202862_w.jpg" class="image" style="width:200%">
-      <div class="overlay">
-    <div class="text">Using Vue I was able to create a responsive Cash Register.<br><br>
-<a href="https://codepen.io/Wheelsinn001/pen/RwJxxqj"> <button class="w3-btn w3-white w3-border w3-border-purple w3-round-large w3-hover-purple">Visit CodePen</button></a>
-    </div>
-  </div>
-    </div>
-  </div>
-  </div>
+</div>
 </section>
-<br><br><br><br><br>
 
-<section>
+
+
+
+
+
+<section class="phone">
         <div class="callout">
           <div class="w3-center">
             <div class="w3-column">
@@ -506,22 +595,20 @@ top:100px;
             </div>
           </div>
         </section>
-<br><br><br>
-<footer class="w3-small">
-      <div class="container is-narrow w3-ios-dark-blue w3-text-grey"><a class="w3-text-white " href="/"><img src="https://live.staticflickr.com/65535/52620132972_fd21e261e7_n.jpg" style="width:10%"  class="wil"></a>
-        <div class="columns is-centered"> 
+        <br><br>
+<footer class="section is-primary is-small has-text-centered tur">
+      <div class="container is-narrow"><a class="logo has-text-white" href="/"><img src="https://live.staticflickr.com/65535/52624326410_98d7f0c9e7_z.jpg" class="image is-48x48"></a>
+        <div class="columns is-centered pale"> 
           <div class="column is-one-third">
-            <h1 class="title is-size-4-touch has-text-weight-normal w3-center w3-xlarge"><b>Living, learning, &amp; leveling up<br> one day at a time.</b></h1>
+            <h1 class="title is-size-4-touch has-text-weight-normal w3-text-white">Living, learning, &amp; leveling up one day at a time.</h1>
           </div>
         </div>
-        <br><br><br>
-        <div class="socials w3-small w3-center">
-          <p class="field"><a class="button is-medium" href="https://twitter.com/TheAbahWilson" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/fluency/512/twitter.png" class="socicon"></span></a><a class="button is-medium" href="https://www.linkedin.com/in/wilson-abah-5a3041189/" target="_blank"><span ><img src="https://img.icons8.com/fluency/512/linkedin.png" class="socicon"></span></a><a class="button is-medium" href="https://github.com/Wheelsinn001" target="_blank"><span class="icon is-small"> <img src="https://img.icons8.com/fluency/512/github.png" class="socicon"> </span></a>  <a class="button is-medium" href="https://www.instagram.com/wheel_sinn/" target="_blank"><span class="icon is-small"> <img src="https://img.icons8.com/fluency/512/instagram-new.png" class="socicon"></span></a>  <a class="button is-medium" href="mailto:wilsonkvng16@gmail.com"> <img src="https://img.icons8.com/fluency/512/apple-mail.png" class="socicon"> <span class="icon is-small"> </span></a></p>
-        </div>
-        <br><br><br>
-        <div class="copyright w3-center w3-large">Handcrafted by me <span class="icon has-white-text w3-center"> <img src="https://img.icons8.com/fluency/2x/creative-commons-all-rights-reserved.png" class="social"> </span>  2022</div>
+       <div class="social-icons pale">
+          <p class="field"><a class="button is-medium" href="https://twitter.com/TheAbahWilson" target="_blank"><span class="icon is-small"><i class="fab fa-twitter fa-fw"></i></span></a><a class="button is-medium" href="https://dribbble.com/Wheelsinn001" target="_blank"><span class="icon is-small"><i class="fab fa-dribbble fa-fw"></i></span></a><a class="button is-medium" href="https://www.linkedin.com/in/wilson-abah-5a3041189/" target="_blank"><span class="icon is-small"><i class="fab fa-linkedin-in fa-fw"></i></span></a><a class="button is-medium" href="https://www.indiehackers.com/wheelsinn001" target="_blank"><span class="icon is-small"><i class="fak fa-indie-hackers fa-fw"></i></span></a><a class="button is-medium" href="https://github.com/Wheelsinn001" target="_blank"><span class="icon is-small"><i class="fab fa-github fa-fw"></i></span></a><a class="button is-medium" href="mailto:wilsonkvng16@gmail.com"><span class="icon is-small"><i class="far fa-envelope fa-fw"></i></span></a></p>
+        </div><br><br>
+        <div class="copyright w3-text-white">Handcrafted by me<span class="icon has-white-text" style="vertical-align:middle;"><i class="far fa-copyright"></i></span>twentytwentytwo</div><br><br><br>
+        <div class="made-by-bulma pale"><a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="200" height="31"></a></div>
       </div>
-      
     </footer>
     <script src="./index.js"></script>
 
