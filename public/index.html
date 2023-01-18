@@ -44,29 +44,14 @@
 
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-
+    
        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="https://kit.fontawesome.com/9bdc906322.js"></script>
     <script async="" src="https://cdn.splitbee.io/sb.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script>
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+
 </script>
 
     <style>
@@ -126,14 +111,14 @@ function w3_close() {
 }
 
 .intro{
-  height: 100vh;
+  height: auto;
   width: auto;
   background: linear-gradient(
 to bottom,
 #a275f5 0%,
 #a275f5 80%,
-#e8cee3 80%,
-#e8cee3 100%
+#a275f5 80%,
+#a275f5 100%
 
   );
 
@@ -144,13 +129,13 @@ to bottom,
 
 
 .sky{
-  height: 100vh;
+  height:auto;
   width: auto;
   background: linear-gradient(
-to right,
-#e8cee3 0%,
-#e8cee3 50%,
-#e8cee3 50%,
+to bottom,
+#a275f5 0%,
+#a275f5 30%,
+#e8cee3 30%,
 #e8cee3 100%
  );
 
@@ -187,11 +172,8 @@ to right,
   border-top: 100px;
 }
 .wer{
-  margin-top:100px;
-  margin-bottom: 100px;
 }
 .box{
-  margin-bottom: 100px;
 }
 .overlay {
   position: absolute;
@@ -251,29 +233,33 @@ to right,
   box-shadow: 0 0 2px #888;
   padding: 0.5em 0.6em;
 }
+
+.navbar-item{
+  margin-top: 30px;
+}
 </style>
   </head>
   <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
       <div class="container">
- <div class="navbar-brand"><a class="navbar-item" href="/"><img class="image is-128x128" src="https://live.staticflickr.com/65535/52624391538_55d45feb98_z.jpg">  </a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+ <div class="navbar-brand"><a class="navbar-item" href="/"><img class="" src="https://live.staticflickr.com/65535/52624391538_55d45feb98_z.jpg" height="70" width="70">  </a><a class="navbar-burger  w3-hover-text-blue w3-hover-white" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+
 
         <div class="navbar-menu is-shadowless" id="navMenu">
           <div class="navbar-start" ></div>
 
-          <div class="navbar-end"><a class="navbar-item has-text-weight-normal  w3-hover-text-blue" href="/mentorship">Mentorship</a>
-             <div class="navbar-item"><a class="button is-primary is-outlined is-rounded has-text-weight-normal w3-border-blue w3-blue" href="/contact.html">Say Hello </a>
+          <div class="navbar-end is-active"><a class="navbar-item   has-text-weight-normal  w3-hover-text-blue" href="/mentorship">Hey</a>
+             <div class="navbar-item is-active"><a class="button is-primary is-outlined is-rounded has-text-weight-normal w3-border-blue w3-blue " href="/contact.html">Say Hello </a>
 </div>
             </div>
 </div>
-</div>
-</nav>
+</nav><br><br>
 <section class="hero is-white has-text-centered">
 <div class="hero-body">
 <div class="container">
   <div class="columns is-centered">
             <div class="column">
-            <p class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"><i class="w3-text-blue">WILSON ABAH</i> </p>
+            <p class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"><b class= "w3-text-blue">WILSON ABAH</b></p>
               <h1 class="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile"> Designer, Frontend Developer &amp; Researcher</h1>
               <h2 class="subtitle is-size-4-tablet">I design and code beautifully simple things, and I love what I do.</h2><img class="avatar w3-spin" src="https://mattfarley.ca/img/mf-avatar.svg">
           </div>
@@ -304,7 +290,7 @@ to right,
         <div class="box ">
           <div class="content">
             <div class="columns is-centered">
-              <div class="columns wer">              <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-layer-plus fa-stack-1x has-text-dark is-centered logos"></i></span>
+              <div class="columns wer">              <div class="column"><img src="https://img.icons8.com/color/512/dribbble.png" class="logos image is-rounded">
 
                 <h1 class="title is-size-4 is-spaced about w3-text-blue">Designer</h1>
                 <p><b>I value simple content structure, clean design patterns, and thoughtful interactions.</b></p>
@@ -322,7 +308,7 @@ to right,
                 </b>
                 </ul>
               </div>
-                         <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-square-terminal fa-stack-1x has-text-dark logos"></i></span>
+                         <div class="column"><img src="https://img.icons8.com/color/512/developer.png" class="logos image is-rounded" >
 
                 <h1 class="title is-size-4 is-spaced w3-text-blue">Frontend Developer</h1>
                 <p><b>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</b></p>
@@ -342,7 +328,7 @@ to right,
                   <li>VSCode</li></b>
                 </ul>
               </div>
-                            <div class="column"><span class="fa-stack fa-2x"><i class="fa-solid fa-circle fa-stack-2x has-text-success image is-64x64"></i><i class="fa-light fa-book fa-stack-1x has-text-dark logos"></i></span>
+                            <div class="column"><img src="https://img.icons8.com/color/512/wikipedia-logo.png" class="logos image is-rounded">
 
                 <h1 class="title is-size-4 is-spaced about1 w3-text-blue">Researcher</h1>
                 <p><b>I genuinely care about my craft and love going deeper and further in my fields.</b></p>
@@ -364,13 +350,15 @@ to right,
         </div>
       </div>
     </section>
-    <br><br>
+    <br><br><br>
+    <section>
     <div class="hero-foot">
     <div class="container">
      <img src="https://live.staticflickr.com/65535/52619596327_4e6461e893_z.jpg" class=" is-bottom img w3-animate-fading">
         </div>    
 </div>
-  
+  </section>
+  <br><br><br>
     <section  class="section projects is-medium is-white has-text-centered">
       <div class="container is-narrow">
         <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">My Demos</h1>
@@ -396,7 +384,7 @@ to right,
     <figcaption class=" text">
 
                   <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A flying plane animated with 3D CSS and automated with Javascript.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/JjZMMjP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/JjZMMjP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
 
   </figcaption>
   </div>
@@ -409,7 +397,7 @@ to right,
        <div class="overlay">
       <figcaption class="text">
     <h1 class="title is-size-5 is-size-4-widescreen w3-text-white">A checkbox impossible  to return back to its original form.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/GRGyOQp" class="button is-primary is-outlined is-rounded  w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/GRGyOQp" class="button is-primary is-outlined is-rounded  w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
    </figcaption>
                </div>
               </figure>
@@ -419,7 +407,7 @@ to right,
          <div class="overlay">
         <figcaption class="text">
     <h1 class="title is-size-5 is-size-4-widescreen w3-text-white">Using Scroll Trigger to create disc motion, and using JS to make available different sounds and effects.</h1>
-<a href="https://codepen.io/Wheelsinn001/pen/KKeZyLo" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+<a href="https://codepen.io/Wheelsinn001/pen/KKeZyLo" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
     </figcaption>
                </div>
               </figure>
@@ -430,7 +418,7 @@ to right,
        <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A game of Tic Tac Toe I created using CSS and SVG.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/OJEzOaW" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/OJEzOaW" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
  </div>
               </figure>
@@ -442,7 +430,7 @@ to right,
        <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Experimental Physics displaying the Newton Bulb Theory.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/oNyGjgN" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/oNyGjgN" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
  </div>
               </figure>
@@ -454,7 +442,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Cards Stacked Against Devs.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/LYreQEL" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/LYreQEL" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -467,7 +455,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Google Chrome Dino.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/vYrpdOd" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/vYrpdOd" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -480,7 +468,7 @@ to right,
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Scalextrix Race.</h1>
       <a href="https://codepen.io/Wheelsinn001/pen/VwdyQjQ" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white
-      "><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      "><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -493,7 +481,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Tesla Coils.</h1>
-      <a href="https://codepen.io/Wheelsinn001/details/MWXEaJP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/details/MWXEaJP" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -506,7 +494,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A Dimmer Switch To put on and off background light.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/oNypprw" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/oNypprw" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -518,7 +506,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> An Infinte Coverflow.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/xxzppZK" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/xxzppZK" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -530,7 +518,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Snake Constantly screaming.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/qBKpxWr" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/qBKpxWr" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -544,7 +532,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> A fully working StopWatch.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/abKEExZ" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/abKEExZ" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -556,7 +544,7 @@ to right,
 <div class="overlay">
             <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Animated Toaster.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/PoaEEEE" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/PoaEEEE" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -569,7 +557,7 @@ to right,
       <div class="overlay">
       <figcaption class="text">
 <h1 class="title is-size-5 is-size-4-widescreen w3-text-white"> Vue Cash Register.</h1>
-      <a href="https://codepen.io/Wheelsinn001/pen/RwJxxqj" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fas fa-angle-right"></i></span></a>
+      <a href="https://codepen.io/Wheelsinn001/pen/RwJxxqj" class="button is-primary is-outlined is-rounded w3-border-blue w3-hover-blue w3-text-white"><span>Visit CodePen</span><span class="icon"><i class="fa fa-exchange" style="color:white;"></i></span></a>
   </figcaption>
   </div>
               </figure>
@@ -597,16 +585,17 @@ to right,
         </section>
         <br><br>
 <footer class="section is-primary is-small has-text-centered tur">
-      <div class="container is-narrow"><a class="logo has-text-white" href="/"><img src="https://live.staticflickr.com/65535/52624326410_98d7f0c9e7_z.jpg" class="image is-48x48"></a>
+      <div class="container is-narrow"><a class="logo has-text-white" href="/"><img src="https://live.staticflickr.com/65535/52624326410_98d7f0c9e7_z.jpg" class="fa-4x image is-96x96" height="28"></a>
         <div class="columns is-centered pale"> 
           <div class="column is-one-third">
             <h1 class="title is-size-4-touch has-text-weight-normal w3-text-white">Living, learning, &amp; leveling up one day at a time.</h1>
           </div>
         </div>
        <div class="social-icons pale">
-          <p class="field"><a class="button is-medium" href="https://twitter.com/TheAbahWilson" target="_blank"><span class="icon is-small"><i class="fab fa-twitter fa-fw"></i></span></a><a class="button is-medium" href="https://dribbble.com/Wheelsinn001" target="_blank"><span class="icon is-small"><i class="fab fa-dribbble fa-fw"></i></span></a><a class="button is-medium" href="https://www.linkedin.com/in/wilson-abah-5a3041189/" target="_blank"><span class="icon is-small"><i class="fab fa-linkedin-in fa-fw"></i></span></a><a class="button is-medium" href="https://www.indiehackers.com/wheelsinn001" target="_blank"><span class="icon is-small"><i class="fak fa-indie-hackers fa-fw"></i></span></a><a class="button is-medium" href="https://github.com/Wheelsinn001" target="_blank"><span class="icon is-small"><i class="fab fa-github fa-fw"></i></span></a><a class="button is-medium" href="mailto:wilsonkvng16@gmail.com"><span class="icon is-small"><i class="far fa-envelope fa-fw"></i></span></a></p>
+          <p class="field"><a class="button is-medium" href="https://twitter.com/TheAbahWilson" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/color/512/twitter-circled.png" 
+            ></span></a><a class="button is-medium" href="https://dribbble.com/Wheelsinn001" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/color/512/dribbble.png"></span></a><a class="button is-medium" href="https://www.linkedin.com/in/wilson-abah-5a3041189/" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/color/512/linkedin-circled.png"></span></a><a class="button is-medium" href="https://www.instagram.com/wheel_sinn/" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/color/512/instagram-new.png"></span></a><a class="button is-medium" href="https://github.com/Wheelsinn001" target="_blank"><span class="icon is-small"><img src="https://img.icons8.com/color/512/github.png"></span></a><a class="button is-medium" href="mailto:wilsonkvng16@gmail.com"><span class="icon is-small"><img src="https://img.icons8.com/color/512/gmail-new.png"></span></a></p>
         </div><br><br>
-        <div class="copyright w3-text-white">Handcrafted by me<span class="icon has-white-text" style="vertical-align:middle;"><i class="far fa-copyright"></i></span>twentytwentytwo</div><br><br><br>
+        <div class="copyright w3-text-white">Handcrafted by me<span class="icon has-white-text" style="vertical-align:middle;"><img src="https://img.icons8.com/color/512/creative-commons-all-rights-reserved.png"></span>twentytwentytwo</div><br><br><br>
         <div class="made-by-bulma pale"><a href="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma--white.png" alt="Made with Bulma" width="200" height="31"></a></div>
       </div>
     </footer>
